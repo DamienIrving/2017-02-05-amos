@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "AMOS/MSNZ Conference"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "AMOS / MSNZ Conference"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Australian National University (room TBA)"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
@@ -46,11 +46,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
-<h4>This is the workshop template.  Use it to create your own website.
-Delete this line and email the link to your workshop page to admin@software-carpentry.org.
-If this is a self organized workshop, please be sure to include any other details
-Software Carpentry staff may need to know in your email.</h4>
-
 
 <h2 id="general">General Information</h2>
 
@@ -60,6 +55,13 @@ Software Carpentry staff may need to know in your email.</h4>
   Edit the general explanatory paragraph below if you want to change
   the pitch.
 -->
+<p>
+  On the two days prior to their joint conference in Canberra,
+  the Australian Meteorological and Oceanographic Society (AMOS) and 
+  Meteorological Society of New Zealand (MSNZ),
+  with assistance from the ARC Centre of Excellence for Climate System Science,
+  will team up to deliver a Software Carpentry workshop.
+</p>
 <p>
   <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
   is to help scientists and engineers get more research done in less
@@ -86,11 +88,12 @@ Software Carpentry staff may need to know in your email.</h4>
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at graduate students and other researchers working in the 
+  AMOS / MSNZ sciences (i.e. meteorology, climatoloogy, oceanography, glaciology).
   <strong>You don't need to have any previous knowledge of the tools that will
     be presented at the workshop.</strong>
 </p>
-
+ 
 <!--
   LOCATION
 
@@ -109,6 +112,18 @@ Software Carpentry staff may need to know in your email.</h4>
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
+
+<p id="registration">
+  <strong>Registration:</strong>
+  Participants can register at the <a href="http://www.amos.org.au/Main/Upcoming_Events/amos2017.aspx">AMOS/MSNZ conference website</a> 
+  at the same time as registering for the conference itself. 
+  The fee is $90 for students and $140 otherwise, which is used to pay an administratve fee to the 
+  Software Carpentry Foundation and to assist the volunteer instructors with their accommodation expenses. 
+  At the registration site it is possible to register for the workshop alone (i.e. and not the conference as well), 
+  however note that the workshop is only open to people working/studying in the AMOS/MSNZ sciences. 
+  Registrations for the workshop close on 31 December or when the venue capacity (50 people) has been reached, 
+  whichever comes first. 
+</p>
 
 <!--
   SPECIAL REQUIREMENTS
@@ -312,20 +327,6 @@ Software Carpentry staff may need to know in your email.</h4>
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_github_io}}/git-novice/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_github_io}}/sql-novice-survey/reference/">Reference...</a></li>
     </ul>
   </div>
 </div>
@@ -654,89 +655,7 @@ Software Carpentry staff may need to know in your email.</h4>
 -->
 </div> <!-- End of 'Python' section. -->
 
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
 
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_installer}}">Software Carpentry Windows Installer</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
