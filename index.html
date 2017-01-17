@@ -5,7 +5,7 @@ venue: "AMOS / MSNZ Conference"        # brief name of host site without address
 address: "Flexible Laboratory (G01), Fenner School Geography Building (Building 48A), Australian National University"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "-35.277682,149.115448"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+latlng: "-35.277571,149.115903"  # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "Feb 5-6, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-02-05      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -108,8 +108,10 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  ,
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+  <a href="https://studentvip.com.au/anu/main/maps/81922">Student VIP</a>.
 </p>
 {% endif %}
 
